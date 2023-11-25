@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'EntezareZohoor B3';
+    src: url('EntezareZohoorB3.eot');
+    src: url('EntezareZohoorB3.eot?#iefix') format('embedded-opentype'),
+        url('EntezareZohoorB3.woff2') format('woff2'),
+        url('EntezareZohoorB3.woff') format('woff'),
+        url('EntezareZohoorB3.ttf') format('truetype'),
+        url('EntezareZohoorB3.svg#EntezareZohoorB3') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri-Bold.eot');
+    src: url('Calibri-Bold.eot?#iefix') format('embedded-opentype'), 
+        url('Calibri-Bold.woff2') format('woff2'),
+        url('Calibri-Bold.woff') format('woff'),
+        url('Calibri-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'B Nazanin';
+    src: url('BNazanin.eot');
+    src: url('BNazanin.eot?#iefix') format('embedded-opentype'),
+        url('BNazanin.woff2') format('woff2'),
+        url('BNazanin.woff') format('woff'), 
+        url('BNazanin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

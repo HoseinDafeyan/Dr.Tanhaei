@@ -1,0 +1,328 @@
+﻿body {
+    font-family: 'EntezareZohoor B3';
+    background-image: url(../img/bgRightBottom-min.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: local;
+}
+
+.HeaderSite {
+    /*height: 40px;*/
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1993c4;
+}
+
+    .HeaderSite nav.navbar {
+        padding: 0 10px 0 0;
+    }
+
+ul.navbar-nav .nav-item {
+    padding: 0 15px 0 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: 'Calibri';
+}
+
+ul.navbar-nav .active.nav-item {
+    background-image: url(../img/RedBollet.png);
+}
+
+ul.navbar-nav .nav-item {
+    background-image: url(../img/BlueBollet.png);
+}
+
+.Search {
+    height: 70px;
+    background-color: #ff7900;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .Search .SearchBox {
+        width: 80%;
+        background-color: #fff;
+        border-radius: 30px;
+        height: 35px;
+        display: flex;
+    }
+
+        .Search .SearchBox .SearchForm {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 8px;
+            padding-left: 6px;
+            font-family: 'Calibri'
+        }
+
+        .Search .SearchBox .SearchInput {
+            border: none;
+            width: 80%;
+        }
+
+        .Search .SearchBox .SearchSubmit {
+            padding: 1px 35px;
+            border-radius: 20px;
+            background-color: #41a87c;
+            border: none;
+        }
+
+.BackgroungLeft img {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+}
+
+.BackgroungRightTop img {
+    position: absolute;
+    right: -124px;
+    z-index: -1;
+    width: 40%;
+}
+
+.BackgroungRightBottom {
+    overflow: hidden
+}
+
+    .BackgroungRightBottom img {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        width: 100%;
+    }
+
+
+.Section {
+    display: flex;
+    margin-top: 150px;
+}
+
+    .Section .SectionImage img {
+        width: 200px;
+    }
+
+
+
+    .Section .SectionContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Section .SectionHeader {
+        display: flex;
+        align-items: center;
+        margin-bottom: -10px;
+    }
+
+    .Section .SectionContent .SectionTitleLine {
+        height: 20px;
+        width: 101px;
+        border-top: 2px solid #f00;
+        margin-top: 20px;
+        border-radius: 1px;
+    }
+
+    .Section .SectionContent .SectionTitle {
+        font-size: 46px;
+        font-family: 'EntezareZohoor B3';
+    }
+
+    .Section .SectionContent .SectionTitleDesc {
+        padding: 9px 10px;
+        background-color: #ff0000;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 12px;
+        margin-bottom: 0px;
+        font-family: 'Calibri';
+    }
+
+    .Section .SectionContent .SectionList {
+        font-family: 'Calibri';
+        color: #2a8072;
+        font-size: 1.9em;
+    }
+
+        .Section .SectionContent .SectionList li::marker {
+            font-size: 20px;
+        }
+
+    /*Left*/
+    .Section.LeftAlign {
+        padding-left: 200px;
+        flex-direction: row-reverse;
+    }
+
+        .Section.LeftAlign .SectionContent {
+            align-items: flex-end;
+        }
+
+            .Section.LeftAlign .SectionContent .SectionList {
+                text-align: left;
+                padding-left: 0;
+                list-style-position: inside;
+                direction: ltr;
+            }
+
+        .Section.LeftAlign .SectionHeader {
+            flex-direction: row;
+        }
+
+        .Section.LeftAlign .SectionContent .SectionTitleLine {
+            border-left: 2px solid #f00;
+        }
+
+    /*Right*/
+    .Section.RightAlign {
+        padding-right: 200px;
+    }
+
+        .Section.RightAlign .SectionContent {
+            align-items: flex-start;
+        }
+
+            .Section.RightAlign .SectionContent .SectionList {
+                text-align: right;
+                padding-right: 0;
+                list-style-position: inside;
+                direction: rtl;
+            }
+
+        .Section.RightAlign .SectionHeader {
+            flex-direction: row-reverse;
+        }
+
+        .Section.RightAlign .SectionContent .SectionTitleLine {
+            border-right: 2px solid #f00;
+        }
+
+
+.ButtomDescription {
+    display: flex;
+    margin-top: 150px;
+    justify-content: flex-end;
+}
+
+    .ButtomDescription .SectionContent {
+        position: absolute;
+        top: 100px;
+        font-size: 24px;
+        right: 110px;
+        font-family: 'B Nazanin';
+    }
+
+    .ButtomDescription .SectionImage img {
+        width: 400px !important;
+    }
+
+    .ButtomDescription .LeftAlign {
+        display: flex;
+        padding-left: 200px;
+        flex-direction: row-reverse;
+        position: relative;
+        flex-direction: column;
+    }
+
+.ContactUs .RightAlign {
+}
+
+.ContactUs .SectionContent {
+    color: #fff;
+    padding-right: 60px;
+    font-size: 22px;
+    font-family: 'Calibri';
+}
+
+
+@media (min-width: 576px) {
+    .Section .SectionContent .SectionList {
+        font-size: 1.3em;
+    }
+}
+@media (min-width: 768px) {
+    .Section {
+        margin-top: 45px;
+    }
+
+        .Section.LeftAlign {
+            padding-left: 60px;
+        }
+
+        .Section.RightAlign {
+            padding-right: 60px;
+        }
+        .Section .SectionContent .SectionList {
+            font-size: 1.2em;
+        }
+}
+
+@media (min-width: 992px) {
+    ul.navbar-nav .nav-item {
+        padding: 0 30px 0 20px;
+    }
+    .Section.LeftAlign {
+        padding-left: 80px;
+    }
+
+    .Section.RightAlign {
+        padding-right: 80px;
+    } 
+    .Section {
+        margin-top: 75px;
+    }
+        .Section .SectionContent .SectionList {
+            font-size: 1.4em;
+        }
+}
+
+@media (min-width: 992px) {
+  
+      
+}
+
+@media (min-width: 1150px) {
+    .Section {
+        margin-top: 95px;
+    }
+        .Section.LeftAlign {
+            padding-left: 100px;
+        }
+
+        .Section.RightAlign {
+            padding-right: 100px;
+        }
+        .Section .SectionContent .SectionList {
+            font-size: 1.6em;
+        }
+       
+}
+
+@media (min-width: 1200px) {
+
+    .Section {
+        margin-top: 105px;
+    }
+        .Section.LeftAlign {
+            padding-left: 150px;
+        }
+
+        .Section.RightAlign {
+            padding-right: 150px;
+        }
+}
+
+@media (min-width: 1280px) {
+
+    .Section {
+        margin-top: 125px;
+    }
+}
+
+
