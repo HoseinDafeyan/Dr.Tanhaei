@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: local;
+    background-size: contain;
 }
 
 .HeaderSite {
@@ -221,14 +222,17 @@ ul.navbar-nav .nav-item {
     .ButtomDescription .SectionImage img {
         width: 400px !important;
     }
-
-    .ButtomDescription .LeftAlign {
-        display: flex;
-        padding-left: 200px;
-        flex-direction: row-reverse;
-        position: relative;
-        flex-direction: column;
+    .ButtomDescription .SectionContent p {
+        width: 200px;
     }
+
+        .ButtomDescription .LeftAlign {
+            display: flex;
+            padding-left: 200px;
+            flex-direction: row-reverse;
+            position: relative;
+            flex-direction: column;
+        }
 
 .ContactUs .RightAlign {
 }
@@ -239,11 +243,25 @@ ul.navbar-nav .nav-item {
     font-size: 22px;
     font-family: 'Calibri';
 }
-
+textarea:focus, input:focus {
+    outline: none;
+}
+@media (max-width: 576px) {
+ 
+    .Section {
+        margin-top: 25px;
+    }
+}
 
 @media (min-width: 576px) {
     .Section .SectionContent .SectionList {
-        font-size: 1.3em;
+        font-size: 0.9em;
+    }
+    .ButtomDescription{
+        margin-top:35px;
+    }
+    .Section {
+        margin-top: 35px;
     }
 }
 @media (min-width: 768px) {
@@ -259,7 +277,7 @@ ul.navbar-nav .nav-item {
             padding-right: 60px;
         }
         .Section .SectionContent .SectionList {
-            font-size: 1.2em;
+            font-size: 1em;
         }
 }
 
@@ -278,7 +296,7 @@ ul.navbar-nav .nav-item {
         margin-top: 75px;
     }
         .Section .SectionContent .SectionList {
-            font-size: 1.4em;
+            font-size: 1.2em;
         }
 }
 
@@ -299,7 +317,7 @@ ul.navbar-nav .nav-item {
             padding-right: 100px;
         }
         .Section .SectionContent .SectionList {
-            font-size: 1.6em;
+            font-size: 1.4em;
         }
        
 }
@@ -321,7 +339,25 @@ ul.navbar-nav .nav-item {
 @media (min-width: 1280px) {
 
     .Section {
-        margin-top: 125px;
+        margin-top: 130px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    body {
+        background-size: contain;
+    }
+    .Section {
+        margin-top: 145px;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .Section {
+        margin-top: 165px;
     }
 }
 
